@@ -1,16 +1,30 @@
 {
-  "mimeTypes": {
-    ".dll": "application/octet-stream",
-    ".wasm": "application/wasm",
-    ".woff": "font/woff",
-    ".woff2": "font/woff2",
-    ".js": "application/javascript",
-    ".json": "application/json",
-    ".pdb": "application/octet-stream",
-    ".dat": "application/octet-stream",
-    ".blat": "application/octet-stream",
-    ".br": "application/octet-stream",
-    ".gz": "application/octet-stream",
-    ".icudtl": "application/octet-stream"
-  }
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": [
+      "*.{css,js}",
+      "*.{png}",
+      "*.{c,h,wasm,clr,pdb,dat,txt}"
+    ]
+  },
+  "routes": [
+    {
+      "route": "/package_*",
+      "headers": {
+        "cache-control": "public, immutable, max-age=31536000"
+      }
+    },
+    {
+      "route": "/*.ttf",
+      "headers": {
+        "cache-control": "public, immutable, max-age=31536000"
+      }
+    },
+    {
+      "route": "/*",
+      "headers": {
+        "cache-control": "must-revalidate, max-age=3600"
+      }
+    }
+  ]
 }
