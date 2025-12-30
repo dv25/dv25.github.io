@@ -1,0 +1,32 @@
+{
+  "background_color": "#ffff00",
+  "description": "UnoApp1",
+  "display": "standalone",
+  "name": "UnoApp1",
+  "short_name": "UnoApp1",
+  "start_url": "/index.html",
+  "theme_color": "#ffff00",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "package_2e96d910df334b08ae1caae880f28e764094044a/icon-16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "package_2e96d910df334b08ae1caae880f28e764094044a/icon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "package_2e96d910df334b08ae1caae880f28e764094044a/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "package_2e96d910df334b08ae1caae880f28e764094044a/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
